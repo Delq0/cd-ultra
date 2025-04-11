@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="AllStyle.css">
 </head>
 <body>
-    <audio preload="auto">
+    <audio controls autoplay loop class="catsound">
         <source src="Audio/FlickeringLights.mp3" type="audio/mpeg">
       </audio>
     <style>
+        .catsound{
+            visibility: hidden;
+        }
     body{
         background-image: url("Images/cat_smoke.JPG");
         background-attachment: fixed;
