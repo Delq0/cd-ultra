@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Terms and Privacy</title>
-    <link rel="stylesheet" href="AllStyle.css">
-</head>
-<body>
+    <link rel="stylesheet" href="AllStyle.css" />
+  </head>
+  <body>
     <style>
-        .priv{
-            width: 50%;
-            margin-top: 5%;
-            margin-left: 6%;
-            font-size: 6rem;
-            display: flex; justify-content: center;
+        body{
+            margin: 0%;
+            background-image: url("Images/cat_smoke.JPG");
         }
-
-            
-        .catsmoke{
-            position: absolute;
-            top: 50px; right: 50px;
-            text-align: center;
-            font-size: 2rem;
-        }
+      .priv {
+        width: max-content;  
+        font-size: 100%;
+        display: flex;
+        background-color: #ccc;
+        padding: 2%;
+      }
     </style>
-    <div class=priv>
-        <p class="ps">
-            I wont steal your data bc idk how to do that ong xoxo
-        </p> 
+    <div class="priv">
+      <p class="ps">I wont steal your data bc idk how to do that ong xoxo</p>
     </div>
-    <div class="catsmoke">
-        <img src="Images/cat_smoke.JPG">
-        <p class="ps"> Literally me</p>
-    </div>
-</body>
+    <!--Keybind blocking javascript-->
+    <script> 
+        document.addEventListener('contextmenu', function(e) { 
+            e.preventDefault(); 
+        }); 
+        document.onkeydown = function(e) { 
+    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) { 
+        e.preventDefault(); 
+    } 
+}; 
+        </script> 
+  </body>
 </html>
