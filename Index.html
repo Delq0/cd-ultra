@@ -7,28 +7,49 @@
     <link rel="stylesheet" href="AllStyle.css">
 </head>
 <style>
-    .LogoWText{
+    body{
         -webkit-user-select: none; 
         -ms-user-select: none; 
         user-select: none;
-        border-color: rgb(0, 0, 0);
-        border-width: 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .LogoWText{
         border-radius: 2rem;
-        background-color: rgba(138, 138, 138, 0.678);
+        background-color: rgba(196, 196, 196);
         width: 13rem;
         display: block; 
         margin-left: auto; 
         margin-right: auto;
-        margin-top: 0%;
         padding-left: 1rem;
         padding-right: 1rem;
         padding-top: 1rem;
+    }
+    .choice{
+        font-size: 120%;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 1rem;
+        background-color: rgb(196, 196, 196);
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 80%;
     }
 </style>
 <body>
     <div class="LogoWText" style="content: inherit;">
         <img src="Images/CD.png" style="display: block; margin-left: auto; margin-right: auto; width: 7rem">
-        <p style="text-align: center; font-size: 200%; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-bottom: 1rem;"> CD Midlands</p>
+        <p style="text-align: center; font-size: 200%; padding-bottom: 1rem;"> CD Midlands</p>
     </div>
+    <button class="choice">
+        <p onclick="window.location.href = 'Pre-Made.html'">Pre-Made selections</p>
+    </button>
+    <br><br>
+    <button class="choice">
+        <p>Request Things</p>
+    </button>
+    <br><br>
+    <button class="choice">
+        <p>Empty discs</p>
+    </button>
 </body>
 </html>
